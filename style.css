@@ -1,0 +1,290 @@
+/* Reset */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+  min-height:100vh;
+
+  background:#020617;
+
+  font-family:'Poppins', sans-serif;
+
+  padding:40px;
+
+  color:white;
+}
+
+/* Container */
+
+.container{
+  max-width:1400px;
+
+  margin:auto;
+}
+
+/* Header */
+
+.header{
+  text-align:center;
+
+  margin-bottom:50px;
+}
+
+.header h1{
+  font-size:60px;
+
+  margin-bottom:15px;
+}
+
+.header p{
+  font-size:20px;
+
+  color:#cbd5e1;
+}
+
+/* Component Card */
+
+.component-card{
+  background:
+    rgba(255,255,255,0.08);
+
+  border:
+    1px solid rgba(255,255,255,0.1);
+
+  border-radius:30px;
+
+  padding:35px;
+
+  margin-bottom:35px;
+
+  backdrop-filter:blur(12px);
+}
+
+/* Heading */
+
+.component-card h2{
+  font-size:30px;
+
+  margin-bottom:25px;
+}
+
+/* Buttons */
+
+.button-group{
+  display:flex;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+}
+
+/* Common Button */
+
+button{
+  padding:16px 30px;
+
+  border:none;
+
+  border-radius:50px;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+/* Primary */
+
+.primary{
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  color:white;
+}
+
+/* Secondary */
+
+.secondary{
+  background:#ec4899;
+
+  color:white;
+}
+
+/* Outline */
+
+.outline{
+  background:transparent;
+
+  border:2px solid white;
+
+  color:white;
+}
+
+/* Hover */
+
+button:hover{
+  transform:
+    translateY(-5px)
+    scale(1.05);
+}
+
+/* Cards */
+
+.cards{
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+  gap:25px;
+
+  margin-bottom:35px;
+}
+
+/* Card */
+
+.card{
+  background:
+    rgba(255,255,255,0.08);
+
+  border:
+    1px solid rgba(255,255,255,0.1);
+
+  border-radius:28px;
+
+  padding:35px;
+
+  text-align:center;
+
+  transition:0.3s;
+
+  backdrop-filter:blur(12px);
+}
+
+/* Hover */
+
+.card:hover{
+  transform:
+    translateY(-10px);
+}
+
+/* Icons */
+
+.card i{
+  width:90px;
+  height:90px;
+
+  border-radius:25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  font-size:36px;
+
+  margin:0 auto 25px;
+}
+
+/* Card Heading */
+
+.card h3{
+  font-size:28px;
+
+  margin-bottom:15px;
+}
+
+/* Card Text */
+
+.card p{
+  font-size:16px;
+
+  line-height:1.8;
+
+  color:#cbd5e1;
+}
+
+/* Inputs */
+
+.inputs{
+  display:flex;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+}
+
+/* Input */
+
+input{
+  flex:1;
+
+  min-width:250px;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:18px;
+
+  background:
+    rgba(255,255,255,0.1);
+
+  color:white;
+
+  font-size:16px;
+
+  outline:none;
+}
+
+/* Placeholder */
+
+input::placeholder{
+  color:#cbd5e1;
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+  body{
+    padding:20px;
+  }
+
+  .header h1{
+    font-size:42px;
+  }
+
+  .header p{
+    font-size:18px;
+  }
+
+  .component-card{
+    padding:25px;
+  }
+
+  button{
+    width:100%;
+  }
+}
